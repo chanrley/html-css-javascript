@@ -1,0 +1,299 @@
+h1 {
+    color: red;
+}
+
+h2 {
+    color: green;
+    text-align: center;
+    font-size: 50px;
+}
+/* CLasses e Ids */
+
+.p-texto {
+    color: lightgreen;
+}
+
+#titulo-app {
+    color: darkgreen;
+}
+
+/* COres */
+
+.nome {
+    color: orange;
+}
+/*  pesquisar no google "colorpicker hexadecimal" */
+.hexa {
+    color: #6a40c4;
+}
+
+
+.rgba {
+    color: rgba(1,255,255,.2); /* sendo o último número a transparencia*/
+    font-size: 40px;
+}
+
+/* Backgrounds */
+
+.div-background {
+    background-image: url('img/por-do-sol.jpeg');
+    height: 300px;
+
+}
+
+.titulo-back {
+    text-align: center;
+    background-color: #000; /*se usar só 3 zeros é o resumo para 000000*/
+    color: #FFF;
+}
+
+/* Fontes */
+
+.family.serif {
+    color: green;
+
+}
+
+.family {
+    color: #000;
+    font-size: 40px;
+}
+
+.serif {
+    font-family: "times new roman";
+}
+
+.sans-serif {
+    font-family: arial;
+}
+
+.monospace {
+    font-family: "Courier New";
+}
+
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.variant {
+    font-variant: small-caps;
+}
+
+/* Box model 
+/* .boxmodel {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    padding: 30px 20px;
+    border: 3px solid blue;
+    border-width: 5px 10px 2px 10px;
+    /* border-left: 5px dotted blue;
+    border-right-style: double; 
+    border-width: 20px 10px;
+    border-radius: 15px;
+}
+
+.paragrafo-box {
+    color: #000;
+    margin: 0;
+
+} 
+*/
+
+/* Box model parte 2 */
+body {
+    margin: 0px;
+
+}
+
+.boxmodel {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    /* Geral */
+    /* padding: 20px;
+    /* Específico */
+    /* padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+      */
+    /* Específico agrupado */
+    /* padding: 30px 20px 5px 10px; cima, direita, baixo, esquerda....sempre no sentido horário */
+    /* Específico agrupado 3 medidas - top, right-left, bottom */
+    /* padding: 30px 20px 5px; */
+    /* Especifico agrupado 2 medidas top-bottom, right-left */
+    /* Margin */
+    padding: 30px 20px;
+    border: 3px solid #000;
+    border-width: 5px 10px 2px 10px;
+    border-radius: 15px;
+    margin: 50px;
+    /* display: none; esconde os elementos na tela */ 
+    display: inline-block; /* um ao lado do outro */
+    display: block; /* preenche 100% das telas */
+
+
+}
+
+.paragrafo-box {
+    color: #000;
+    margin: 0;
+}
+
+
+/* Positions */
+
+/* static  - flor no html, não é alterada por top, left, right e bottom */
+/* relative  - flow no html, ela é alterada pelo top, left, right e bottom */
+/* fixed - posiciona em qlqr lugar da tela e é posicionada em relação ao HTML*/
+/* absolute posiciona em qualquer lugar, e ela respeita o elemento antecessor */
+/* sticky  - está no flow do html, porém ao passar o scroll ela funciona como fixed */
+
+.div-position {
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+    border: 2px dotted black;
+}
+
+.div-static {
+    position: static;
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+    border: 2px dotted black;
+
+}
+
+.div-relative {
+    position: relative;
+    background-color: red;
+    top: 100px;
+    left: 50px;
+    width: 500px;
+    height: 500px;
+
+}
+
+.div-absolute {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: purple;
+    border: 2px dotted black;
+    right: 0;
+    top: 0;
+}
+
+.mini-div {
+    height: 50px;
+    width: 50px;
+    top: 50px;
+    left: 100px;
+    background-color: pink;
+}
+
+
+.div-fixed {
+    position: fixed;
+    width: 20px;
+    height: 200px;
+    background-color: yellow;
+    border: 2px dotted black;
+    right: 0;
+    bottom: 0;
+
+}
+
+.div-sticky {
+    position: sticky;
+    background-color: gray;
+    top: 0px;
+
+}
+
+/* Float */
+
+.div-float{
+    overflow: auto;
+
+}
+
+
+.container {
+    padding: 50px;
+}
+
+.img-float {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.p-float {
+    color: #000;
+}
+
+.clear {
+    clear: both;
+
+}
+
+/* Units - Unidades de medidas */
+
+.pixel-1 {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.pixel-2 {
+    background-color: blue;
+    width: 500px;
+    height: 50px;
+}
+
+.pai-porcentagem {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+}
+
+.porcentagem-1 {
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+}
+
+.pai-em{
+
+}
+
+.pai-em {
+    font-size: 50px;
+}
+
+.em-1 {
+    width: 1em;
+    height: 1em;
+    background-color: purple;
+}
+
+.rem-1 {
+    width: 1rem;
+    height: 1rem;
+    background-color: blue;
+}
